@@ -91,6 +91,9 @@ nnoremap <leader>s :set nolist!<CR>
 " Tab navigation
 nnoremap <C-n> gt
 nnoremap <C-p> gT
+nnoremap <C-t> :tabnew<CR>
+
+set showtabline=2
 
 " Disable the help key
 nnoremap <F1> <Esc>
@@ -129,3 +132,8 @@ set t_vb=
 
 " Map <Leader>s to sort the visual selection
 vnoremap <Leader>s :sort<Cr>
+
+" Colors
+hi TabLineFill ctermfg=Gray ctermbg=Gray
+hi TabLine ctermfg=Black ctermbg=Gray
+hi TabLineSel ctermfg=White ctermbg=Blue
