@@ -88,15 +88,8 @@ let w:m80=matchadd('ErrorMsg', '\%>80v.\+', -1)
 set textwidth=80
 
 " Highlight trailing space, and tab characters, toggle with <leader>-s
-" set list lcs=tab:>-,trail:.
+set list lcs=tab:\ \ ,trail:\ 
 " nnoremap <leader>s :set nolist!<CR>
-
-" highlight ExtraWhitespace ctermbg=red guibg=red
-" match ExtraWhitespace /\s\+$/
-" autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-" autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-" autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-" autocmd BufWinLeave * call clearmatches()
 
 " Tab navigation
 nnoremap <C-n> gt
@@ -147,3 +140,5 @@ vnoremap <Leader>s :sort<Cr>
 hi TabLineFill ctermfg=Gray ctermbg=Gray
 hi TabLine ctermfg=Black ctermbg=Gray
 hi TabLineSel ctermfg=White ctermbg=Blue
+
+hi SpecialKey ctermbg=Red
