@@ -1,3 +1,4 @@
+set t_Co=256
 set nocompatible
 set expandtab
 set tabstop=4
@@ -137,6 +138,8 @@ set t_vb=
 vnoremap <Leader>s :sort<Cr>
 
 " Colors
+colorscheme inkpot
+
 hi TabLineFill ctermfg=Gray ctermbg=Gray
 hi TabLine ctermfg=Black ctermbg=Gray
 hi TabLineSel ctermfg=White ctermbg=Blue
