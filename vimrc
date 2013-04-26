@@ -37,7 +37,7 @@ endif
 " Powerline config
 Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 " Enable filetype detection
 filetype plugin indent on
