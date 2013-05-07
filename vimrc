@@ -120,6 +120,10 @@ inoremap <Up>    <NOP>
 inoremap <Right> <NOP>
 inoremap <Down>  <NOP>
 inoremap <Left>  <NOP>
+noremap <Up>    <NOP>
+noremap <Right> <NOP>
+noremap <Down>  <NOP>
+noremap <Left>  <NOP>
 
 inoremap jj <Esc>
 
