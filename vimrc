@@ -84,9 +84,9 @@ if has("spell")
     set nospell
 endif
 
-" Highlight lines longer than 80 chars
-let w:m80=matchadd('ErrorMsg', '\%>80v.\+', -1)
-set textwidth=80
+" Highlight lines longer than 72 chars
+let w:m72=matchadd('ErrorMsg', '\%>72v.\+', -1)
+set textwidth=72
 
 " Highlight trailing space, and tab characters, toggle with <leader>-s
 set list lcs=tab:\ \ ,trail:\ 
