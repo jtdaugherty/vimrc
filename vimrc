@@ -2,6 +2,7 @@ set t_Co=256
 set nocompatible
 set expandtab
 set tabstop=4
+set autoindent
 set shiftwidth=4
 
 " let mapleader      = ","
