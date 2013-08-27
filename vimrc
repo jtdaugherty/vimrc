@@ -1,9 +1,5 @@
 set t_Co=256
 set nocompatible
-set expandtab
-set tabstop=4
-set autoindent
-set shiftwidth=4
 
 " let mapleader      = ","
 " let maplocalleader = ";"
@@ -86,11 +82,10 @@ if has("spell")
 endif
 
 " Highlight lines longer than 72 chars
-let w:m72=matchadd('ErrorMsg', '\%>72v.\+', -1)
-set textwidth=72
+" let w:m72=matchadd('ErrorMsg', '\%>72v.\+', -1)
+" set textwidth=72
 
 " Highlight trailing space, and tab characters, toggle with <leader>-s
-set list lcs=tab:\ \ ,trail:\ 
 " nnoremap <leader>s :set nolist!<CR>
 
 " Tab navigation

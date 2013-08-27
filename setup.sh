@@ -11,3 +11,9 @@ then
 fi
 
 vim +BundleInstall +qall
+
+HERE=$(cd `dirname $0`; pwd)
+if [ ! -d ~/.vim ]
+then
+    ln -s $HERE ~/.vim
+fi
