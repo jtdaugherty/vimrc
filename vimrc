@@ -63,6 +63,9 @@ set scrolloff=3
 " Allow \ \ to kill the search highlighting.
 nnoremap <Leader><Leader> :noh<Enter>
 
+nnoremap s :exec "normal i".nr2char(getchar())."\el"<CR>
+nnoremap S :exec "normal a".nr2char(getchar())."\el"<CR>
+
 " Always show cursor position
 set ruler
 
