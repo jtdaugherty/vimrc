@@ -71,8 +71,7 @@ nnoremap S :exec "normal a".nr2char(getchar())."\el"<CR>
 " Always show cursor position
 set ruler
 
-" Fold by manually defined folds
-set foldenable
+set nofoldenable
 
 " Syntax
 if &t_Co > 2 || has("gui_running")
