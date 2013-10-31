@@ -1,6 +1,8 @@
 set t_Co=256
 set nocompatible
 
+autocmd BufEnter * silent! lcd %:p:h
+
 " let mapleader      = ","
 " let maplocalleader = ";"
 
