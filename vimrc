@@ -17,6 +17,7 @@ call vundle#rc($VIMHOME . '/bundle')
 
 " Vundle
 Bundle 'gmarik/vundle'
+Bundle 'tommcdo/vim-lion'
 
 " External packages
 Bundle 'tpope/vim-markdown'
