@@ -21,6 +21,7 @@ Bundle 'tommcdo/vim-lion'
 
 " External packages
 Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-commentary'
 Bundle 'IndentAnything'
 " Bundle 'OOP-javascript-indentation'
 " Bundle 'aaronbieber/quicktask'
