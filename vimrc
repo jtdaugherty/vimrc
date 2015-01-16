@@ -3,6 +3,8 @@ set nocompatible
 
 autocmd BufEnter * silent! lcd %:p:h
 
+set formatprg=par
+
 " let mapleader      = ","
 " let maplocalleader = ";"
 
