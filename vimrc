@@ -17,32 +17,25 @@ filetype off
 set rtp+=$VIMHOME/bundle/vundle/
 call vundle#rc($VIMHOME . '/bundle')
 
-" Vundle
+" Vundle and packages
 Bundle 'gmarik/vundle'
 Bundle 'tommcdo/vim-lion'
-
-" External packages
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-commentary'
 Bundle 'IndentAnything'
-" Bundle 'OOP-javascript-indentation'
-" Bundle 'aaronbieber/quicktask'
-
 Bundle 'tpope/vim-fugitive'
 Bundle 'jcf/vim-latex'
 Bundle 'ciaranm/inkpot'
-
-" Haskell Indenting
 Bundle 'elliottt/haskell-indent'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
 
 " NERDTree config
-Bundle 'scrooloose/nerdtree'
 if $OS != 'windows'
     let NERDTreeQuitOnOpen = 1
 endif
 
 " Powerline config
-Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
 " let g:Powerline_symbols = 'fancy'
 
