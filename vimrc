@@ -29,6 +29,15 @@ Bundle 'ciaranm/inkpot'
 Bundle 'elliottt/haskell-indent'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/ctrlp.vim'
+
+" vim-surround?
+
+" CtrlP settings
+let g:ctrlp_map = '<Space>'
+let g:ctrlp_extensions = [ 'mixed' ]
+let g:ctrlp_user_command = 'ag %s --nocolor -g ""'
+let g:ctrlp_match_window = 'max:20'
 
 " NERDTree config
 if $OS != 'windows'
