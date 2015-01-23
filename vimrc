@@ -30,8 +30,7 @@ Bundle 'elliottt/haskell-indent'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
-
-" vim-surround?
+Bundle 'tpope/vim-surround'
 
 " CtrlP settings
 let g:ctrlp_map = '<Space>'
