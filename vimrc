@@ -31,6 +31,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'pangloss/vim-javascript'
 
 " CtrlP settings
 let g:ctrlp_map = '<Space>'
