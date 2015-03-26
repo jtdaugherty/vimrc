@@ -14,6 +14,10 @@ let $VIMHOME = $HOME . '/vimrc'
 " Setup bundles
 filetype off
 
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+
 set rtp+=$VIMHOME/bundle/vundle/
 call vundle#rc($VIMHOME . '/bundle')
 
