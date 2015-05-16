@@ -1,4 +1,3 @@
-set t_Co=256
 set nocompatible
 
 autocmd BufEnter * silent! lcd %:p:h
@@ -36,6 +35,16 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
+Bundle 'altercation/vim-colors-solarized'
+
+" Colors and Syntax
+set t_Co=256
+syntax enable
+set background=light
+" colorscheme inkpot
+
+" Highlight searches
+set hlsearch
 
 " CtrlP settings
 let g:ctrlp_map = '<Space>'
@@ -83,12 +92,6 @@ set ruler
 
 set nofoldenable
 
-" Syntax
-if &t_Co > 2 || has("gui_running")
-    syntax enable
-    set hlsearch
-endif
-
 " Spell checking
 if has("spell")
     setlocal spell spelllang=en_us
@@ -121,10 +124,6 @@ set wildmode=longest:full,list:full
 set wildmenu
 set wildignore=*.o,*.hi,*.swp,*.bc
 
-" Colors!
-colors default
-set bg=dark
-
 " Disable the arrow keys when in edit mode
 inoremap <Up>    <NOP>
 inoremap <Right> <NOP>
@@ -151,12 +150,9 @@ set t_vb=
 " Map <Leader>s to sort the visual selection
 vnoremap <Leader>s :sort<Cr>
 
-" Colors
-colorscheme inkpot
-
-hi TabLineFill ctermfg=Gray ctermbg=Gray
-hi TabLine ctermfg=Black ctermbg=Gray
-hi TabLineSel ctermfg=White ctermbg=Blue
+" hi TabLineFill ctermfg=Gray ctermbg=Gray
+" hi TabLine ctermfg=Black ctermbg=Gray
+" hi TabLineSel ctermfg=White ctermbg=Blue
 
 hi SpecialKey ctermbg=Red
 
