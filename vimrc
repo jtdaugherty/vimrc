@@ -105,6 +105,11 @@ endif
 " Highlight trailing space, and tab characters, toggle with <leader>-s
 " nnoremap <leader>s :set nolist!<CR>
 
+" Better wrapping bindings
+nnoremap <c-k> gqap
+inoremap <c-k> <Esc>gqapi
+vnoremap <c-k> gq
+
 " Tab navigation
 nnoremap <C-n> gt
 nnoremap <C-p> gT
