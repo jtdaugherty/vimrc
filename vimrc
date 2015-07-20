@@ -129,6 +129,10 @@ set wildmode=longest:full,list:full
 set wildmenu
 set wildignore=*.o,*.hi,*.swp,*.bc
 
+" Colors!
+" colorscheme inkpot
+" set bg=dark
+
 " Disable the arrow keys when in edit mode
 inoremap <Up>    <NOP>
 inoremap <Right> <NOP>
