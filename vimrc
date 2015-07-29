@@ -30,18 +30,17 @@ Bundle 'IndentAnything'
 Bundle 'jcf/vim-latex'
 Bundle 'ciaranm/inkpot'
 Bundle 'elliottt/haskell-indent'
-Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
 Bundle 'altercation/vim-colors-solarized'
 
-" Colors and Syntax
-set t_Co=256
+" Colors!
 syntax enable
-set background=light
-" colorscheme inkpot
+set t_Co=256
+colorscheme solarized
+set bg=dark
 
 " Highlight searches
 set hlsearch
@@ -51,11 +50,8 @@ let g:ctrlp_map = '<Space>'
 let g:ctrlp_extensions = [ 'mixed' ]
 let g:ctrlp_user_command = 'ag %s --nocolor -g ""'
 let g:ctrlp_match_window = 'max:20'
-
-" NERDTree config
-if $OS != 'windows'
-    let NERDTreeQuitOnOpen = 1
-endif
+let g:ctrlp_cmd = 'CtrlPMixed'
+nnoremap <C-m> :CtrlPBuffer<CR>
 
 " Powerline config
 set laststatus=2
@@ -71,9 +67,6 @@ set backspace=indent,eol,start
 
 " Incremental searching
 set incsearch
-
-" Extended matching with %
-" runtime macros/matchit.vim
 
 " Set the terminal title
 set title
@@ -115,8 +108,6 @@ nnoremap <C-n> gt
 nnoremap <C-p> gT
 nnoremap <C-t> :tabnew<CR>
 
-set showtabline=2
-
 " Disable the help key
 nnoremap <F1> <Esc>
 inoremap <F1> <Esc>
@@ -128,10 +119,6 @@ set printoptions=paper:letter
 set wildmode=longest:full,list:full
 set wildmenu
 set wildignore=*.o,*.hi,*.swp,*.bc
-
-" Colors!
-" colorscheme inkpot
-" set bg=dark
 
 " Disable the arrow keys when in edit mode
 inoremap <Up>    <NOP>
