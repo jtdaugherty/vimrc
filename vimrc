@@ -28,20 +28,24 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'IndentAnything'
 Bundle 'jcf/vim-latex'
-Bundle 'ciaranm/inkpot'
 Bundle 'elliottt/haskell-indent'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
+" Bundle 'ciaranm/inkpot'
 Bundle 'altercation/vim-colors-solarized'
+" Bundle 'atelierbram/vim-colors_atelier-schemes'
 
 " Colors and Syntax
 set t_Co=256
 syntax enable
-set background=light
 " colorscheme inkpot
+colorscheme solarized
+set background=dark
+" set background=light
+" colorscheme base16-ateliersulphurpool
 
 " Highlight searches
 set hlsearch
@@ -107,7 +111,7 @@ endif
 
 " Better wrapping bindings
 nnoremap <c-k> gqap
-inoremap <c-k> <Esc>gqapi
+inoremap <c-k> <Esc>gqap
 vnoremap <c-k> gq
 
 " Tab navigation
