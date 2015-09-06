@@ -29,23 +29,19 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'IndentAnything'
 Bundle 'jcf/vim-latex'
 Bundle 'elliottt/haskell-indent'
-Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
 " Bundle 'ciaranm/inkpot'
 Bundle 'altercation/vim-colors-solarized'
 " Bundle 'atelierbram/vim-colors_atelier-schemes'
 
-" Colors and Syntax
-set t_Co=256
+" Colors!
 syntax enable
-" colorscheme inkpot
+set t_Co=256
 colorscheme solarized
-set background=dark
-" set background=light
-" colorscheme base16-ateliersulphurpool
+set bg=dark
 
 " Highlight searches
 set hlsearch
@@ -55,11 +51,8 @@ let g:ctrlp_map = '<Space>'
 let g:ctrlp_extensions = [ 'mixed' ]
 let g:ctrlp_user_command = 'ag %s --nocolor -g ""'
 let g:ctrlp_match_window = 'max:20'
-
-" NERDTree config
-if $OS != 'windows'
-    let NERDTreeQuitOnOpen = 1
-endif
+let g:ctrlp_cmd = 'CtrlPMixed'
+nnoremap <C-m> :CtrlPBuffer<CR>
 
 " Powerline config
 set laststatus=2
@@ -75,9 +68,6 @@ set backspace=indent,eol,start
 
 " Incremental searching
 set incsearch
-
-" Extended matching with %
-" runtime macros/matchit.vim
 
 " Set the terminal title
 set title
@@ -118,8 +108,6 @@ vnoremap <c-k> gq
 nnoremap <C-n> gt
 nnoremap <C-p> gT
 nnoremap <C-t> :tabnew<CR>
-
-set showtabline=2
 
 " Disable the help key
 nnoremap <F1> <Esc>
