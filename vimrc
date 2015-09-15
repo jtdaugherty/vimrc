@@ -6,8 +6,8 @@ autocmd BufEnter * silent! lcd %:p:h
 
 set formatprg=par
 
-" let mapleader      = ","
-" let maplocalleader = ";"
+let mapleader      = ";"
+let maplocalleader = "\\"
 
 " OS Detection
 let $VIMHOME = $HOME . '/vimrc'
@@ -30,7 +30,6 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'IndentAnything'
 Bundle 'jcf/vim-latex'
-Bundle 'ciaranm/inkpot'
 Bundle 'elliottt/haskell-indent'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'ctrlpvim/ctrlp.vim'
@@ -74,13 +73,10 @@ set incsearch
 set title
 
 " Cursor context
-set scrolloff=3
+set scrolloff=10
 
-" Allow \ \ to kill the search highlighting.
+" Allow leader-leader to kill the search highlighting.
 nnoremap <Leader><Leader> :noh<Enter>
-
-nnoremap s :exec "normal i".nr2char(getchar())."\el"<CR>
-nnoremap S :exec "normal a".nr2char(getchar())."\el"<CR>
 
 " Always show cursor position
 set ruler
@@ -93,19 +89,15 @@ if has("spell")
     set nospell
 endif
 
-" Highlight lines longer than 72 chars
-" let w:m72=matchadd('ErrorMsg', '\%>72v.\+', -1)
-" set textwidth=72
-
-" Highlight trailing space, and tab characters, toggle with <leader>-s
-" nnoremap <leader>s :set nolist!<CR>
-
 " Better wrapping bindings
 nnoremap <c-k> gqap
-inoremap <c-k> <Esc>gqapi
+inoremap <c-k> <Esc>gqap
 vnoremap <c-k> gq
 
 " Tab navigation
+inoremap <C-n> <Esc>gt
+inoremap <C-p> <Esc>gT
+inoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <C-n> gt
 nnoremap <C-p> gT
 nnoremap <C-t> :tabnew<CR>
@@ -131,8 +123,6 @@ noremap <Up>    <NOP>
 noremap <Right> <NOP>
 noremap <Down>  <NOP>
 noremap <Left>  <NOP>
-
-inoremap jk <Esc>
 
 " Set F2 as the binding to toggle the paste mode
 set pastetoggle=<F2>
