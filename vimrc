@@ -1,6 +1,7 @@
 set nocompatible
 set modeline
 set modelines=5
+set timeoutlen=1000 ttimeoutlen=0
 
 autocmd BufEnter * silent! lcd %:p:h
 
