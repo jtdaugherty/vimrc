@@ -95,9 +95,6 @@ inoremap <c-k> <Esc>gqap
 vnoremap <c-k> gq
 
 " Tab navigation
-inoremap <C-n> <Esc>gt
-inoremap <C-p> <Esc>gT
-inoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <C-n> gt
 nnoremap <C-p> gT
 nnoremap <C-t> :tabnew<CR>
