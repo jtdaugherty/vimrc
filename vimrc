@@ -71,7 +71,7 @@ set incsearch
 set title
 
 " Cursor context
-set scrolloff=10
+set scrolloff=5
 
 " Allow leader-leader to kill the search highlighting.
 nnoremap <Leader><Leader> :noh<Enter>
