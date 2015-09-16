@@ -100,9 +100,13 @@ nnoremap <C-n> gt
 nnoremap <C-p> gT
 nnoremap <C-t> :tabnew<CR>
 
-" Disable the help key
-nnoremap <F1> <Esc>
-inoremap <F1> <Esc>
+" Map F1 to toggle background dark/light
+function! ToggleBackground()
+  let &background = ( &background == "dark" ? "light" : "dark" )
+endfunction
+
+nnoremap <F1> :call ToggleBackground()<CR>
+inoremap <F1> :call ToggleBackground()<CR>
 
 " Print options
 set printoptions=paper:letter
