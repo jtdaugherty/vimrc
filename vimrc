@@ -1,4 +1,6 @@
 set nocompatible
+set modeline
+set modelines=5
 
 autocmd BufEnter * silent! lcd %:p:h
 
