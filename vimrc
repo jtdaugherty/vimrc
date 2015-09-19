@@ -37,6 +37,7 @@ Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'tommcdo/vim-exchange'
 
 " Colors!
 syntax enable
