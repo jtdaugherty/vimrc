@@ -3,7 +3,8 @@ set modeline
 set modelines=5
 set timeoutlen=1000 ttimeoutlen=0
 
-autocmd BufEnter * silent! lcd %:p:h
+" Change the CWD to the location of a file when entering its buffer
+" autocmd BufEnter * silent! lcd %:p:h
 
 set formatprg=par
 
@@ -29,9 +30,11 @@ Bundle 'tommcdo/vim-lion'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-dispatch'
 Bundle 'IndentAnything'
 Bundle 'jcf/vim-latex'
 Bundle 'elliottt/haskell-indent'
+Bundle 'elliottt/vim-haskell'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tpope/vim-surround'
