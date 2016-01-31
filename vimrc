@@ -42,6 +42,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tommcdo/vim-exchange'
 Bundle 'petRUShka/vim-opencl'
+Bundle 'tikhomirov/vim-glsl'
 
 " Colors!
 syntax enable
