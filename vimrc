@@ -58,7 +58,7 @@ set hlsearch
 " CtrlP settings
 let g:ctrlp_map = '<Space>'
 let g:ctrlp_extensions = [ 'mixed' ]
-let g:ctrlp_user_command = 'ag %s --nocolor -g ""'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_match_window = 'max:20'
 let g:ctrlp_cmd = 'CtrlPMixed'
 nnoremap <C-m> :CtrlPBuffer<CR>
