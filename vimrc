@@ -41,6 +41,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tommcdo/vim-exchange'
+Bundle 'ervandew/supertab'
+Bundle 'airblade/vim-gitgutter'
+
+let g:gitgutter_sign_column_always = 1
 
 " Colors!
 syntax enable
