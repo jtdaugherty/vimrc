@@ -65,6 +65,8 @@ let g:ctrlp_match_window = 'max:20'
 let g:ctrlp_cmd = 'CtrlPMixed'
 nnoremap <C-m> :CtrlPBuffer<CR>
 
+set diffopt=filler,vertical
+
 " Powerline config
 set laststatus=2
 " let g:Powerline_symbols = 'fancy'
