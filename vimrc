@@ -33,8 +33,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
 Bundle 'IndentAnything'
 Bundle 'jcf/vim-latex'
-Bundle 'elliottt/haskell-indent'
-Bundle 'elliottt/vim-haskell'
+Bundle 'jtdaugherty/vim-haskell'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tpope/vim-surround'
@@ -43,8 +42,14 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tommcdo/vim-exchange'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'tikhomirov/vim-glsl'
-Bundle 'ervandew/supertab'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'SirVer/ultisnips'
+Bundle 'jtdaugherty/vim-snippets'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" let g:UltiSnipsListSnippets = "<c-tab>"
 
 let g:gitgutter_sign_column_always = 1
 
