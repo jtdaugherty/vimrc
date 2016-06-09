@@ -9,7 +9,7 @@ set timeoutlen=1000 ttimeoutlen=0
 set formatprg=par
 
 let mapleader      = ";"
-let maplocalleader = "\\"
+let maplocalleader = ","
 
 " OS Detection
 let $VIMHOME = $HOME . '/vimrc'
@@ -45,6 +45,9 @@ Bundle 'tikhomirov/vim-glsl'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SirVer/ultisnips'
 Bundle 'jtdaugherty/vim-snippets'
+Bundle 'easymotion/vim-easymotion'
+
+map <LocalLeader> <Plug>(easymotion-prefix)
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -153,9 +156,6 @@ nnoremap <F3> :set spell!<CR>
 set noerrorbells
 set visualbell
 set t_vb=
-
-" Map <Leader>s to sort the visual selection
-vnoremap <Leader>s :sort<Cr>
 
 " hi TabLineFill ctermfg=Gray ctermbg=Gray
 " hi TabLine ctermfg=Black ctermbg=Gray
