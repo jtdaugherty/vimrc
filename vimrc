@@ -52,6 +52,7 @@ map <LocalLeader> <Plug>(easymotion-prefix)
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips/'
 " let g:UltiSnipsListSnippets = "<c-tab>"
 
 let g:gitgutter_sign_column_always = 1
