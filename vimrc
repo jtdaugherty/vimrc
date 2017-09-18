@@ -8,8 +8,8 @@ set timeoutlen=1000 ttimeoutlen=0
 
 set formatprg=par
 
-let mapleader      = ";"
-let maplocalleader = ","
+let mapleader      = "\\"
+" let maplocalleader = ","
 
 " OS Detection
 let $VIMHOME = $HOME . '/vimrc'
