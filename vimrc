@@ -45,8 +45,6 @@ Bundle 'tikhomirov/vim-glsl'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SirVer/ultisnips'
 Bundle 'jtdaugherty/vim-snippets'
-Bundle 'scrooloose/syntastic'
-Bundle 'bitc/vim-hdevtools'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
