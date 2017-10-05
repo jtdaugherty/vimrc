@@ -45,9 +45,8 @@ Bundle 'tikhomirov/vim-glsl'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SirVer/ultisnips'
 Bundle 'jtdaugherty/vim-snippets'
-Bundle 'easymotion/vim-easymotion'
-
-map <LocalLeader> <Plug>(easymotion-prefix)
+Bundle 'scrooloose/syntastic'
+Bundle 'bitc/vim-hdevtools'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
