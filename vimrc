@@ -8,8 +8,8 @@ set timeoutlen=1000 ttimeoutlen=0
 
 set formatprg=par
 
-let mapleader      = ";"
-let maplocalleader = ","
+let mapleader      = "\\"
+" let maplocalleader = ","
 
 " OS Detection
 let $VIMHOME = $HOME . '/vimrc'
@@ -45,13 +45,11 @@ Bundle 'tikhomirov/vim-glsl'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SirVer/ultisnips'
 Bundle 'jtdaugherty/vim-snippets'
-Bundle 'easymotion/vim-easymotion'
-
-map <LocalLeader> <Plug>(easymotion-prefix)
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips/'
 " let g:UltiSnipsListSnippets = "<c-tab>"
 
 let g:gitgutter_sign_column_always = 1
