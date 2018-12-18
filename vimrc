@@ -49,7 +49,7 @@ Bundle 'petRUShka/vim-opencl'
 Bundle 'tikhomirov/vim-glsl'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SirVer/ultisnips'
-Bundle 'jtdaugherty/vim-snippets'
+Bundle 'honza/vim-snippets'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
